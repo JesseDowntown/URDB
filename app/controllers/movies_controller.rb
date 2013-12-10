@@ -48,7 +48,7 @@ class MoviesController < ApplicationController
         format.json { head :no_content }
       else
         format.html { render action: 'edit' }
-        format.json { render json: @movie.error
+        format.json { render json: @movie.error }
       end
     end
   end
